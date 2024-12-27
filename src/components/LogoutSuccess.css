@@ -1,0 +1,30 @@
+.logout-success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.logout-success-container h1 {
+  font-size: 2rem;
+  color: #2ecc71;
+}
+
+.logout-success-container p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.logout-success-container button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.logout-success-container button:hover {
+  background-color: #2980b9;
+}

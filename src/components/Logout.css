@@ -1,0 +1,45 @@
+/* ログアウトページ全体のスタイル */
+.logout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8; /* 背景色 */
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* 見出しのスタイル */
+.logout-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* メッセージのスタイル */
+.logout-container p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* エラーメッセージのスタイル */
+.error-message {
+  color: #e74c3c; /* エラー時の赤色 */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ローディング中のスタイル */
+.logout-container button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-c

@@ -1,0 +1,73 @@
+.createPostPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #f7f7f7;
+}
+
+.postContainer {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%; /* 親要素の横幅を100%に設定 */
+  max-width: 450px; /* 最大幅を設定 */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.postContainer h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.postContainer input,
+.postContainer textarea {
+  width: 100%; /* 入力欄の横幅を100%に設定 */
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background-color: #fafafa;
+  color: #333;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.postContainer input:focus,
+.postContainer textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.submitButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  align-self: center; /* ボタンを中央に配置 */
+}
+
+.submitButton:hover {
+  background-color: #45a049;
+}
+
+.submitButton:active {
+  background-color: #388e3c;
+}
+
+.submitButton:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 128, 0, 0.5);
+}

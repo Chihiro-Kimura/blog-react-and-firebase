@@ -1,0 +1,76 @@
+/* ナビゲーションバーのスタイル */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d3748; /* ダークグレーに変更 */
+  gap: 45px;
+  height: 60px; /* 高さを少し広くして、スペースを増やしました */
+  border-bottom: 2px solid #4a5568; /* 下に細い線を追加して、立体感を出します */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 微細なシャドウで浮き上がる効果を追加 */
+  flex-wrap: wrap; /* 要素を折り返せるように */
+}
+
+/* ナビゲーションリンクのスタイル */
+nav a {
+  color: #fff; /* 白色の文字 */
+  text-decoration: none;
+  font-size: 16px; /* フォントサイズを少し大きく */
+  font-weight: 500; /* 少し太字にして目立たせます */
+  letter-spacing: 1px; /* 文字間隔を広げて読みやすく */
+  transition: 0.3s; /* スムーズな遷移 */
+  padding: 10px 15px; /* パディングを追加してクリックしやすく */
+  border-radius: 8px; /* 角を丸くして親しみやすく */
+}
+
+/* ホバー時のスタイル */
+nav a:hover {
+  color: #fbd38d; /* ホバー時に明るい黄色に変化 */
+  background-color: #4a5568; /* 背景色も変更して、より強調 */
+  transform: scale(1.1); /* 少し拡大してアクセントを追加 */
+}
+
+/* アイコンのスタイル */
+nav a svg {
+  margin-right: 8px; /* アイコンとテキストの間隔を調整 */
+  width: 18px; /* アイコンのサイズを少し大きく */
+  height: 18px; /* アイコンのサイズを少し大きく */
+  transition: transform 0.3s ease; /* アイコンの変化にアニメーションを追加 */
+}
+
+nav a:hover svg {
+  transform: rotate(20deg); /* ホバー時にアイコンが少し回転 */
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* ナビゲーションリンクを縦並びに */
+    justify-content: flex-start; /* 上に寄せる */
+    height: auto; /* 高さを自動に変更 */
+    padding: 10px 0; /* パディングを追加して、リンクが押しやすく */
+  }
+
+  nav a {
+    font-size: 14px; /* モバイル向けにフォントサイズを少し小さく */
+    padding: 12px 20px; /* パディングを少し増やしてクリックしやすく */
+    width: 100%; /* リンクの幅を100%にして全体を押しやすく */
+    text-align: center; /* テキストを中央揃えに */
+  }
+
+  nav a:hover {
+    transform: scale(1); /* モバイルでは拡大効果をなくす */
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    font-size: 12px; /* より小さい画面ではさらにフォントサイズを小さく */
+    padding: 10px 15px; /* パディングを調整 */
+  }
+
+  nav a svg {
+    width: 16px; /* アイコンのサイズを少し小さく */
+    height: 16px; /* アイコンのサイズを少し小さく */
+  }
+}
